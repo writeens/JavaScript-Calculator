@@ -29,6 +29,7 @@ body {
     margin: 2rem 0rem 5rem 0rem;
     background-color: #F7F7F7;
     border-radius: 0.5rem;
+    padding-bottom: 0.6rem;
 }
 #calc-text {
     background-color:  rgb(223, 223, 223);
