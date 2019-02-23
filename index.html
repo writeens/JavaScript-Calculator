@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="normalize.css">-->
+    <link rel="stylesheet" type="text/css" media="screen" href="bootstrap.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js" async></script>
+</head>
+<body>
+    <!--Header-->
+    <div id="header" class="text-center">
+        JS CALCULATOR
+    </div>
+    <!--Calculator-->
+    <div class="d-flex justify-content-center all">
+        <div class="red calc-body d-flex flex-column">
+            <!--Text-->
+            <div id="calc-text" class="d-flex align-items-end justify-content-end">
+                <div id="num" class="text-right">
+                    <input type="text" value="0" disabled>
+                </div>
+            </div>
+            <!--Buttons-->
+            <div id="calc-buttons" class="d-flex flex-column">
+                <!--Row 1-->
+                <div class="text-center d-flex flex-row">
+                    <div id="AC" class="col"><button data-action="clear" id="AC" class="mybtn clicked">AC</button></div>
+                    <div class="col"><button data-action="delete" class="mybtn clicked">DEL</button></div>
+                    <div class="col"><button data-action="percent" class="mybtn clicked">%</button></div>
+                    <div class="col"><button data-action="divide" class="mybtn clicked">/</button></div>
+                </div>
+                <!--Row 2-->
+                <div class="text-center d-flex flex-row">
+                    <div class="col"><button data-action="7" class="mybtn clicked">7</button></div>
+                    <div class="col"><button data-action="8" class="mybtn clicked">8</button></div>
+                    <div class="col"><button data-action="9" class="mybtn clicked">9</button></div>
+                    <div class="col"><button data-action="multiply" class="mybtn clicked">x</button></div>
+                </div>
+                <!--Row 3-->
+                <div class="text-center d-flex flex-row">
+                    <div class="col"><button data-action="4" class="mybtn clicked">4</button></div>
+                    <div class="col"><button data-action="5" class="mybtn clicked">5</button></div>
+                    <div class="col"><button data-action="6" class="mybtn clicked">6</button></div>
+                    <div class="col"><button data-action="minus" class="mybtn clicked">-</button></div>
+                </div>
+                <!--Row 4-->
+                <div class="text-center d-flex flex-row">
+                    <div class="col"><button data-action="1" class="mybtn clicked">1</button></div>
+                    <div class="col"><button data-action="2" class="mybtn clicked">2</button></div>
+                    <div class="col"><button data-action="3" class="mybtn clicked">3</button></div>
+                    <div class="col"><button data-action="add" class="mybtn clicked">+</button></div>
+                </div>
+                <!--Row 5-->
+                <div class="text-center d-flex flex-row">
+                    <div class="col"><button data-action="00" class="mybtn clicked">00</button></div>
+                    <div class="col"><button data-action="0" class="mybtn clicked">0</button></div>
+                    <div class="col"><button data-action="decimal" class="mybtn clicked">.</button></div>
+                    <div class="col"><button id="eval" data-action="calculate" class="mybtn orange clicked">=</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
