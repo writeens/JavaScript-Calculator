@@ -63,6 +63,9 @@ function knowWhat(e) {
     //delete button to reduce length of display by one
     if(action === "delete") {
         console.log("delete key");
+        if (input.value === "Error") {
+            input.value = "0";
+        }
         input.value = input.value.slice(0, input.value.length - 1);
         if(input.value.length === 0){
             input.value = "0";
@@ -114,6 +117,11 @@ function calculate(x, operator, y) {
     } else if (operator === "multiply") {
         return x1 * y1;
     } else if (operator === "divide") {
-        return x1 / y1;
+        if (y1 === 0){
+            return "Error"
+        } else {
+            return x1 / y1;
+        }
+        
     }
 }
