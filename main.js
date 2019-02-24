@@ -21,7 +21,7 @@ function knowWhat(e) {
     if (action === "1" || action === "2" || action === "3" ||
         action === "4" || action === "5" || action === "6" ||
         action === "7" || action === "8" || action === "9" ||
-        action === "0") {
+        action === "0" || action === "00") {
             if(display === "0" || previousKeyType === "operator" || previousKeyType === "calculate") {
                 input.value = keyContent;
             } else {
@@ -101,11 +101,6 @@ function knowWhat(e) {
         }
         calc_body.setAttribute("data-prevkey", "decimal");
     }
-    //place double zeros on the screen;
-    if(action === "00"){
-        input.value += "00";
-    }
-    
 }
 
 //calculator function
